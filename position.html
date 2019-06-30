@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox wrap 0 — children overflowing</title>
+    <link rel="stylesheet" type="text/css" href="/d:/VS Code/作品/css/position.css" />
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-middle">
+            <span class="logo">BlackPink in your area</span>
+            <ul class="search">
+                <li>
+                    <a href="#">Photos</a>
+                </li>
+                <li href="#">
+                    <a href="#">News</a>
+                </li>
+                <li href="#">
+                    <a href="#">Stages</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-left"></div>
+        <div class="header-right"></div>
+    </div>
+    <div class="banner">
+        <div class="banner-page">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+        </div>
+    </div>
+    <div class="nav">
+            <ul>
+                <li>Jisoo</li>
+                <li>Jennie</li>
+                <li>Rose</li>
+                <li>Lisa</li>
+            </ul>
+    </div>
+    <div class="content">
+        <div class="content-up">
+            <div>BoomBaYah</div>
+            <div>Whistle</div>
+            <div>Stay</div>
+        </div>
+        <div class="content-middle">
+            <div>Kill This Love</div>
+            <div>Don't Know What To Do</div>
+            <div>Kick It</div>
+            <div>Hope Not</div>
+        </div>
+        <div class="content-up">
+            <div>DDu-Du DDu-Du</div>
+            <div>Forever Young</div>
+            <div>Really</div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+    <script>
+        var page = document.getElementsByClassName("banner-page");
+        var btn = document.getElementsByTagName("button");
+        for (var i = 0; i < btn.length; i++) {
+            btn[i].onmouseover = function () {
+                this.style.height = "30px";
+            }
+            btn[i].onmouseout = function () {
+                this.style.height = "20px";
+            }
+        }
+    </script>
+</body>
+
+</html>
